@@ -1,0 +1,80 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body{
+    background-color:midnightblue;
+    background-image: url(https://media.istockphoto.com/id/1419844586/vector/stem-blue-horizontal-frame-vector-education-bright-illustration.jpg?s=612x612&w=0&k=20&c=-A1eYLYulujNsiM26lkVy7qMT_Hp82N5EtKHSFRmigk=);
+}
+/* Calculator Container */
+.calculator {
+    width: 320px;
+    margin: 50px auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(114, 15, 15, 0.1);
+}
+
+/* Display Screen */
+.display {
+    background: #333;
+    color: white;
+    padding: 40px;
+    text-align: right;
+    font-size: 2rem;
+    border-bottom: 3px solid #ccc;
+}
+
+/* Buttons Container */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1px;
+}
+
+/* Button Styling */
+.btn {
+    background: #ddd;
+    border: none;
+    padding: 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #ddd;
+}
+
+.operator {
+    background: #f0ad4e;
+    color: white;
+}
+
+.operator:hover {
+    background: #ec971f;
+}
+
+.equal {
+    background: #5bc0de;
+    color: white;
+    grid-column: span 4;
+}
+
+.equal:hover {
+    background: #31b0d5;
+}
+
+.clear {
+    background: #d9534f;
+    color: white;
+    grid-column: span 4;
+}
+
+.clear:hover {
+    background: #c9302c;
+}
